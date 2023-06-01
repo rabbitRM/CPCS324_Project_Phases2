@@ -89,22 +89,5 @@ for (Vertex vertex : graph.getVertices()) {
 
 
 
-// Print the path from the source to the destination vertex.
-//
-//
-// Print the shortest paths from the source vertex to all other vertices.
-//    for (Vertex vertex : graph.getVertices()) {
-//        List<Vertex> shortestPath = paths.get(vertex);
-//        System.out.print("Shortest Path from " + graph.getVertices().get(source).displayInfo()+ " to " + vertex.displayInfo() + ": ");
-//        else {
-//            shortestPath.add(vertex);
-//            for (int i = 0; i < shortestPath.size() - 1; i++) {
-//                System.out.print(shortestPath.get(i).displayInfo() + " -> ");
-//            }
-//            System.out.println( vertex.displayInfo() + " (distance: " + distances.get(vertex.getLabel()) + ")");
-//    
-//}
-//    }
-//}
 }
 
