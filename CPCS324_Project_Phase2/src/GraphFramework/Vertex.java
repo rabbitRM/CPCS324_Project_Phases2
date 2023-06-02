@@ -8,8 +8,7 @@ public abstract class Vertex  {
     private int label ;
     private boolean isVisited ;    
     private LinkedList<Edge> adjLists = new LinkedList<>();
-        
-    Vertex parent = null;
+  
 
    
     public Vertex(int label ){
@@ -59,14 +58,6 @@ public Edge getMinEdge(){
 
     
 
-    public Vertex getParent() {
-        return parent;
-    }
-
-    public void setParent(Vertex parent) {
-        this.parent = parent;
-    }
-    
     public abstract String displayInfo ();
 
   
