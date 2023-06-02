@@ -23,8 +23,8 @@ public class DBAllSourceSPAlg extends ShortestPathAlgorithm {
             System.out.println("The starting point location is "+ location +
                               " The routes from location "+location+" to the rest of the locations are:");
             
-            dj.dijkstra(source);
-            
+            dj.dijkstra(source.getLabel());
+
             System.out.println("");
             
           
