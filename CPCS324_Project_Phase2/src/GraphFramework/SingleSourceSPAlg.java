@@ -52,7 +52,10 @@ for (Vertex vertex : graph.getVertices()) {
           ArrayList<Vertex> neighborsList = new ArrayList<>();
           for (int i = 0; i < currentVertex.getAdjLists().size(); i++) {
              
-              neighborsList.add(currentVertex.getAdjLists().get(i).getTarget());
+     neighborsList.add(currentVertex.getAdjLists().get(i).getParent().equals(currentVertex) ? 
+             currentVertex.getAdjLists().get(i).getTarget() :
+             currentVertex.getAdjLists().get(i).getParent());
+
           }
           
             // For each neighbor ofthe current vertex:
